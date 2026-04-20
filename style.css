@@ -1,0 +1,159 @@
+/* -------- Reset & base -------- */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #222;
+  background: #fdfdfc;
+}
+
+/* -------- Layout -------- */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.section { padding: 2rem 0; border-top: 1px solid #eee; }
+.section:first-of-type { border-top: none; }
+
+/* -------- Header / nav -------- */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+}
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* -------- Hero -------- */
+.hero {
+  padding: 3rem 0 1.5rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.01em;
+}
+.tagline {
+  font-size: 1.15rem;
+  color: #444;
+  margin: 0 0 0.85rem;
+}
+.links-inline a {
+  color: #0645ad;
+  text-decoration: none;
+}
+.links-inline a:hover { text-decoration: underline; }
+
+/* -------- Typography -------- */
+h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.005em;
+}
+a { color: #0645ad; }
+a:hover { color: #0b0080; }
+
+.muted { color: #666; font-size: 0.95rem; }
+
+/* -------- Lists -------- */
+.bullets {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+.bullets li { margin-bottom: 0.35rem; }
+
+.pub-list {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+.pub-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.pub-title { font-weight: 600; }
+.pub-authors { display: block; color: #444; }
+.pub-venue  { display: block; color: #444; }
+.pub-links  { display: block; font-size: 0.9rem; color: #666; }
+
+/* -------- Blog index -------- */
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+.post-list li {
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+}
+.post-list li:first-child { border-top: none; }
+.post-list a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.post-list a:hover { text-decoration: underline; }
+.post-list time {
+  display: block;
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.15rem;
+}
+.post-list p { margin: 0.4rem 0 0; color: #444; }
+
+/* -------- Post -------- */
+.post { padding: 2rem 0; }
+.post-header h1 { margin-bottom: 0.2rem; }
+.post-meta { color: #888; margin: 0 0 1.5rem; font-size: 0.9rem; }
+.post p { margin: 0 0 1rem; }
+
+/* -------- Footer -------- */
+.site-footer {
+  border-top: 1px solid #eee;
+  padding: 1.25rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* -------- Mobile -------- */
+@media (max-width: 540px) {
+  .hero h1 { font-size: 1.8rem; }
+  .nav { justify-content: flex-start; }
+}
